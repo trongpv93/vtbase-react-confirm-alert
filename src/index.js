@@ -19,11 +19,13 @@ export default class ReactConfirmAlert extends Component {
   static defaultProps = {
     buttons: [
       {
-        label: 'Cancel',
+        label: 'Hủy',
+        type: 'cancel',
         onClick: () => null
       },
       {
-        label: 'Confirm',
+        label: 'Đồng ý',
+        type: 'success',
         onClick: () => null
       }
     ],
@@ -93,7 +95,7 @@ export default class ReactConfirmAlert extends Component {
       <div
         className='react-confirm-alert-overlay'
         ref={dom => (this.overlay = dom)}
-        onClick={this.handleClickOverlay}
+        // onClick={this.handleClickOverlay}
       >
         <div className='react-confirm-alert'>
           {customUI ? (
@@ -105,9 +107,11 @@ export default class ReactConfirmAlert extends Component {
               {childrenElement()}
               <div className='react-confirm-alert-button-group'>
                 {buttons.map((button, i) => (
-                  <button key={i} onClick={() => this.handleClickButton(button)}>
-                    {button.label}
-                  </button>
+                  <div className={'react-confirm-alert-button-group-item-'.concat(button.type)}>
+                    <button key={i} onClick={() => this.handleClickButton(button)}>
+                      {button.label}
+                    </button>
+                  </div>
                 ))}
               </div>
             </div>
