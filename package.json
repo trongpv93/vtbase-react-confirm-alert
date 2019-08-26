@@ -1,6 +1,6 @@
 {
   "name": "vtbase-react-confirm-alert",
-  "version": "2.4.2",
+  "version": "1.0.1",
   "description": "react component confirm dialog.",
   "main": "lib/index.js",
   "scripts": {
