@@ -1,4 +1,4 @@
-# react-confirm-alert
+# vtbase-react-confirm-alert
 
 react component confirm dialog. [Live demo](https://ga-mo.github.io/react-confirm-alert/demo/)
 
@@ -11,7 +11,7 @@ Document for v.1.x.x [see](https://github.com/GA-MO/react-confirm-alert/blob/mas
 #### Install with NPM:
 
 ```
-$ npm install react-confirm-alert --save
+$ npm install vtbase-react-confirm-alert --save
 ```
 
 #### Options
