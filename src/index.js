@@ -103,7 +103,7 @@ export default class ReactConfirmAlert extends Component {
           ) : (
             <div className='react-confirm-alert-body'>
               {title && <h1>{title}</h1>}
-              {message}
+              <span className=''>{message}</span>
               {childrenElement()}
               <div className='react-confirm-alert-button-group'>
                 {buttons.map((button, i) => (
