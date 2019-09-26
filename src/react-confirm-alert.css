@@ -41,6 +41,7 @@ body.react-confirm-alert-body-element {
   box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
   color: #666;
   height: auto;
+  font-size:"15px"
 }
 
 .react-confirm-alert-svg {
@@ -73,7 +74,7 @@ body.react-confirm-alert-body-element {
   background: #333;
   border: none;
   display: inline-block;
-  padding: 6px 18px;
+  padding: 0px 0px;
   color: #eee;
   margin-right: 10px;
   border-radius: 5px;
