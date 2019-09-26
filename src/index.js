@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { render, unmountComponentAtNode } from 'react-dom'
+import { Button } from 'reactstrap'
 
 export default class ReactConfirmAlert extends Component {
   static propTypes = {
@@ -103,15 +104,11 @@ export default class ReactConfirmAlert extends Component {
           ) : (
             <div className='react-confirm-alert-body'>
               {title && <h1>{title}</h1>}
-              {message}
+              {title && <h3>{message}</h3>}
               {childrenElement()}
-              <div className='react-confirm-alert-button-group'>
+              <div className='pvt-react-confirm-alert-button-group'>
                 {buttons.map((button, i) => (
-                  <div className={'react-confirm-alert-button-group-item-'.concat(button.type)}>
-                    <button key={i} onClick={() => this.handleClickButton(button)}>
-                      {button.label}
-                    </button>
-                  </div>
+                  <Button onClick={() => this.handleClickButton(button)} key={i} color={button.type === 'success' ? 'success' : 'danger'}>{button.label}</Button>
                 ))}
               </div>
             </div>

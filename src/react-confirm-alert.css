@@ -56,7 +56,16 @@ body.react-confirm-alert-body-element {
 
 .react-confirm-alert-body > h3 {
   margin: 0;
+  margin-top: 10px;
   font-size: 16px;
+}
+.pvt-react-confirm-alert-button-group{
+  margin-top: 20px;
+  text-align: right;
+}
+.pvt-react-confirm-alert-button-group > button {
+  margin-right: 15px;
+  font-size: 15px;
 }
 
 .react-confirm-alert-button-group {
@@ -67,6 +76,7 @@ body.react-confirm-alert-body-element {
   display: contents;
   margin-top: 20px;
   justify-content: "flex-end" !important;
+  text-align: right;
 }
 
 .react-confirm-alert-button-group > button {
@@ -99,7 +109,7 @@ body.react-confirm-alert-body-element {
   background: #28a745;
   border: none;
   display: inline-block;
-  padding: 6px 18px;
+  padding: 0px 0px;
   color: #eee;
   margin-right: 10px;
   border-radius: 5px;
@@ -113,7 +123,7 @@ body.react-confirm-alert-body-element {
   background: #28a745;
   border: none;
   display: contents;
-  padding: 6px 18px;
+  padding: 0px 0px;
   color: #eee;
   margin-right: 10px;
   border-radius: 5px;
@@ -126,7 +136,7 @@ body.react-confirm-alert-body-element {
   background: #dc3545;
   border: none;
   display: inline-block;
-  padding: 6px 18px;
+  padding: 0px 0px;
   color: #eee;
   margin-right: 10px;
   border-radius: 5px;
@@ -139,7 +149,7 @@ body.react-confirm-alert-body-element {
   background: #dc3545;
   border: none;
   display: contents;
-  padding: 6px 18px;
+  padding: 0px 0px;
   color: #eee;
   margin-right: 10px;
   border-radius: 5px;
